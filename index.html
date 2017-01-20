@@ -39,6 +39,20 @@
 				<b>Software Developer</b><br>
 				BigClozet<br>
 				August 2016 - Present (6 months) | Bengaluru, India<br>
+				<br>
+				I have designed, implemented and own the following components at BigClozet :
+				<ul>
+				<li>
+				<u>Item Service <b>'Falcon'</b></u> - A RESTful service written in Java and Jersey, hosted on Grizzly server and backed by RocksDB embedded database. The service reduces the data load on our search engine built on ElasticSearch reducing its memory footprint. The service itself doesn't have a high memory footprint since the data storage system RocksDB keeps the data on SSD without compromising on retrieval time.
+				</li>
+				<li>
+				<u>Internal Operations Tool <b>'Ottoman'</b></u> - A responsive web application written in Java and AngularJS that serves as management & operational interface for manual efforts - tagging, sanity, and matching. The items to be edited are queued into files on both adhoc and auto basis. The application concurrently allows unique items to be consumed from files and edited upon.
+				</li>
+				<li>
+				<u>Crawling Framework <b>'Spider Crawl'</b></u>- A distributed crawling framework that brings in data from all major seller websites for our processing. The framework is written in Java and the distribution is managed using Kafka. The framework is highly fault tolerant and intelligent. It can detect and handle captcha and throttling issues by rerouting requests via proxy hosts and applying a back-off policy.
+				</li>
+				</ul>
+
 				<span class="label label-default">Java</span>
 				<span class="label label-default">jsoup</span>
 				<span class="label label-default">MongoJack</span>
@@ -64,6 +78,24 @@
 				<b>Software Engineer 1</b><br>
 				PayPal<br>
 				June 2014 - July 2016 (2 years 2 months) | Chennai, India<br>
+				<br>
+				At PayPal, I was part of the Open Analytics Platform development team. My contributions to the project were :
+				<ul>
+				<li>
+				<u>Data Movement & Replication - Web Console</u> SteamDonkey is a daemon service in PayPal for data movement and replication across multiple database instances. I wrote the web console to allow the user to raise and monitor a DMR request and the operations team to validate the requests.
+				</li>
+				<li>
+				<u>I lead the efforts to migrate OAP from eBay to PayPal infrastructure during the eBay-PayPal split.</u>
+				</li>
+				<li>
+				<u>Password Management Console</u> OAP allows user to perform analytics on data stored on different database systems (Terdata & Hadoop). These systems were owned by the DBAs and the Hadoop Ops team. The users were given credentials which they shared with OAP to use the tool. Any change in credentials needed to have a communication from user to OAP team to update the credentials in tool and manual effort from our side to update the metadata. I built the console to allow the user to view, update and verify passwords. I wrote the password validation algorithm to detect incorrect, soon to be expired and expired credentials and intimate the user accordingly. The algorithm also put a hold on execution of scripts dependent on these credentials thereby saving valuable CPU cycles on Teradata.
+				</li>
+				</ul>
+				* Password Management Console - OAP allowed user to perform analytics on data stored on different database systems. A user had username, password pair for each database system. To uses
+
+
+				Data Movement & Replication - Admin Console
+
 				<span class="label label-default">Java</span>
 				<span class="label label-default">Spring</span>
 				<span class="label label-default">Hibernate</span>
